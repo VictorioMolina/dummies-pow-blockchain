@@ -1,4 +1,4 @@
-import Block from "./Block";
+import Block from "../Block";
 
 describe("Block", () => {
   let timestamp;
@@ -14,11 +14,11 @@ describe("Block", () => {
   });
 
   it("Create an instance with parameters", () => {
-    const block = new Block(timestamp, previousBlock.hash, hash, data);
+    const block = new Block(timestamp, data, previousBlock.hash, hash);
 
     expect(block.timestamp).toEqual(timestamp);
-    expect(block.previousHash).toEqual(previousBlock.hash);
     expect(block.data).toEqual(data);
+    expect(block.previousHash).toEqual(previousBlock.hash);
     expect(block.hash).toEqual(hash);
   });
 
@@ -31,9 +31,9 @@ describe("Block", () => {
   });
 
   it("Use of static method hash()", () => {
-    hash = Block.hash(timestamp, previousBlock.hash, data);
+    hash = Block.hash(timestamp, data, previousBlock.hash);
     const expectedHash =
-      "b878a92691af5bf417870d17e46c9876dcf5fc2161dba768ba1140b6dc8d81f6";
+      "5dd0100a7b1b8bca8ac43cefff461d9ae7ab096a3e31273774395c931ebb19d6";
 
     expect(hash).toEqual(expectedHash);
   });
