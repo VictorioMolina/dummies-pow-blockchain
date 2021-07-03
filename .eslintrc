@@ -7,6 +7,6 @@
   "rules": {
     "max-len": [1, 80, { "tabWidth": 2, "ignoreComments": true }],
     "quotes": ["error", "double", { "allowTemplateLiterals": true }],
-    "object-curly-newline": ["error", { "multiline": true }]
+    "object-curly-newline": "off"
   }
 }
