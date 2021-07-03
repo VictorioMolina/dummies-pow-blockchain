@@ -1,4 +1,4 @@
-import Wallet, { INITIAL_BALANCE } from "../Wallet";
+import Wallet, { INITIAL_BALANCE } from "../wallet";
 
 describe("Wallet", () => {
   let wallet;

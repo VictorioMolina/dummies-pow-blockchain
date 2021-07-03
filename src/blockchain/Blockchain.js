@@ -1,4 +1,4 @@
-import Block from "./Block";
+import Block from "./block";
 import validate from "./modules/validate";
 
 class Blockchain {

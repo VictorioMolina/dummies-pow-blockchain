@@ -1,5 +1,5 @@
 import adjustDifficulty from "../adjustDifficulty";
-import { DIFFICULTY } from "../../Block";
+import { DIFFICULTY } from "../../block";
 
 describe("adjustDifficulty", () => {
   let previousBlock;
